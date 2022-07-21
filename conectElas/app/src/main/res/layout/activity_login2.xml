@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EntrarActivity">
+
+    <ImageView
+        android:id="@+id/bg_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.94"
+        app:srcCompat="@drawable/model" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_logar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginBottom="30dp"
+        android:alpha="0.5"
+        android:background="@drawable/bg_gradient"
+        android:elevation="2dp"
+        android:outlineAmbientShadowColor="@color/black"
+        android:text="@string/logar"
+        android:textAlignment="center"
+        android:textColor="#D7C1FF"
+        app:cornerRadius="18dp"
+        app:iconTint="@color/purple_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="32dp"
+        app:startIconDrawable="@drawable/ic_email"
+        app:helperText="O campo e-mail é obrigatório."
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:endIconMode="clear_text"
+        app:boxBackgroundColor="@color/purple_200"
+        android:alpha="0.9"
+        app:endIconTint="@color/purple_500"
+        android:textColorHint="@color/purple_500"
+        app:errorTextAppearance="@color/purple_500"
+        app:helperTextTextColor="@color/purple_500"
+        app:startIconTint="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bg_login"
+        tools:ignore="MissingConstraints"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:maxLength="20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/senhaLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="30dp"
+        android:alpha="0.9"
+        android:textColorHint="@color/purple_500"
+        app:boxBackgroundColor="@color/purple_200"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:passwordToggleEnabled="true"
+        app:endIconTint="@color/purple_500"
+        app:errorTextAppearance="@color/purple_500"
+        app:helperText="Insira a sua senha cadastrada"
+        app:helperTextTextColor="@color/purple_500"
+        app:layout_constraintBottom_toTopOf="@+id/btn_logar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailLayout"
+        app:startIconDrawable="@drawable/ic_cadeado"
+        app:endIconMode="password_toggle"
+        app:startIconTint="@color/purple_500"
+        app:passwordToggleTint="@color/purple_500"
+        >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/senha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/senha_login"
+            android:maxLength="20"
+            android:inputType="textPassword"
+
+            app:layout_constraintBottom_toTopOf="@+id/btn_logar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textImpuLayout" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <ImageView
+        android:id="@+id/loginImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="35dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.64"
+        app:srcCompat="@drawable/login_icon" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

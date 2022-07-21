@@ -3,4 +3,26 @@
     <string name="logo_name">Conect+Elas</string>
     <string name="slogan_logo">A sua rede de apoio digital!</string>
     <string name="btn_entrar">Entrar</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="logar">Logar</string>
+    <string name="add_email">Adicione o seu e-mail</string>
+    <string name="inserir_senha">Insira sua senha</string>
+    <string name="email">E-mail</string>
+    <string name="senha_login">Digite sua senha</string>
+    <string name="criar_conta">Criar Conta</string>
+    <string name="nome_completo">Nome Completo</string>
+    <string name="email_registro">E-mail</string>
+    <string name="fotoRegistro">Insira o link da sua foto</string>
+    <string name="confirme_senha">Confirme a sua senha</string>
+    <string name="tipo_usuario_select">Selecione o Tipo de Usuário</string>
+    <string name="txt_token">Token</string>
 </resources>
